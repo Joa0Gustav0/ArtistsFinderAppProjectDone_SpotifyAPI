@@ -1,0 +1,154 @@
+.favcontainer{
+    transition: all .5s;
+    width: 100%;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 15px;
+    height: calc(100vh - 60px);
+    background-color: rgb(30, 30, 30);
+}
+.favTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 5px;
+    color: white;
+}
+.favTitle > ion-icon{
+    color: #1877f2;
+}
+
+.favList{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 10px;
+    width: 100%;
+    padding-top: 1px;
+    overflow-y: scroll;
+    height: calc(100% - 60px);
+}
+
+.nofavImage{
+    width: 150px;
+    opacity: 0.15;
+    margin-bottom: 20px;
+}
+.nofavText{
+    font-size: 1em;
+    font-weight: 400;
+    width: 200px;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+}
+
+.favcontainer > ion-icon{
+    transition: .25s;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: none;
+
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.favcontainer > ion-icon:hover{
+    cursor: pointer;
+    color: #1877f2;
+}
+.favcontainer > ion-icon:active{
+    cursor: pointer;
+    color: #1FC5A8;
+}
+.favArtistContainer{
+    transition: all .1s;
+    position: relative;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    width: calc(100% - 2px);
+    background-color: rgb(35, 35, 35);
+}
+.favArtistContainer:hover{
+    cursor: pointer;
+    outline: 1px solid white;
+}
+.favArtistContainer:active{
+    background-color: rgb(30, 30, 30);
+}
+.favArtistPicture{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+.favArtistInfos{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.favArtistName{
+    color: white;
+    font-size: 1.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+.favArtistCategorie{
+    color: gray;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.favArtistContainer > ion-icon{
+    transition: all .25s;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    color: #1877f2;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: rgb(30, 30, 30)
+}
+.favArtistContainer > ion-icon:hover{
+    cursor: pointer;
+    transform: scale(105%, 105%);
+}
+.favArtistContainer > ion-icon:active{
+    color: #1FC5A8;
+}
+
+@media screen and (max-width: 899px){
+    .favcontainer{
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 100vw;
+        max-width: none;
+        width: calc(100% - 60px);
+        z-index: 10;
+    }
+    .favcontainer.openedContainer{
+        left: 30px;
+    }
+    .favcontainer.closedContainer{
+        left: 150vw;
+    }
+    .favcontainer > ion-icon{
+        display: block;
+    }
+}

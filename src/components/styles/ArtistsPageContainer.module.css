@@ -1,0 +1,192 @@
+.artistsPage{
+    position: relative;
+
+    display: none;
+
+    width: calc(100vw - 490px);
+    padding: 50px 20px;
+    border-radius: 15px;
+    min-height: fit-content;
+    background-image: linear-gradient(to top, transparent, rgb(30, 30, 30));
+    z-index: 9;
+    /* border: 1px solid rgba(255, 0, 0, 0.178); */
+}
+.artistsPage.activated{
+    display: block;
+}
+
+.artistsPage > ion-icon{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 100%;
+}
+.artistsPage > ion-icon:hover{
+    cursor: pointer;
+    color: #1877f2;
+}
+.artistsPage > ion-icon:active{
+    cursor: pointer;
+    color: #1FC5A8;
+}
+
+.artistHeader{
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.artistHeader > ion-icon{
+    transition: all .1s;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    color: #1877f2;
+    background-color: rgb(25, 25, 25);
+    border-radius: 100%;
+}
+.artistHeader > ion-icon:hover{
+    cursor: pointer;
+    transform: scale(105%, 105%);
+}
+.artistHeader > ion-icon:active{
+    color: #1FC5A8;
+}
+
+.artistPic{
+    width: 150px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #1877f2, #1FC5A8);
+}
+.artistName{
+    color: white;
+    font-size: 2em;
+}
+.artistCategorie{
+    color: gray;
+    font-weight: 400;
+    font-size: 1em;
+}
+.artistFollowers{
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+}
+.artistFollowers > span{
+    color: #1877f2;
+}
+
+.artistAlbumsSecTitle{
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.artistAlbumsSecTitle > ion-icon{
+    transition: all .1s;
+    cursor: pointer;
+
+    width: 20px;
+    height: 20px;
+    color: grey;
+}
+.artistAlbumsSecTitle > ion-icon:hover{
+    color: white;
+    cursor: pointer;
+}
+.artistAlbumsSecTitle > ion-icon:active{
+    color: grey;
+}
+.albumsList{
+    position: relative;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 20px;
+    width: 100%;
+    min-height: 150px;
+    overflow-y: hidden;
+    margin-bottom: 15px;
+}
+.albums{
+    width: calc(33% - 12.5px);
+    border-radius: 15px;
+}
+.albumsLoading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 150px;
+}
+.albumsInstructions{
+    font-size: .8em;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (max-width: 1024px){
+    .albums{
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width: 899px){
+    .artistsPage{
+        min-width: calc(100vw - 60px);
+    }
+    .albums{
+        width: calc(33% - 12px);
+    }
+}
+@media screen and (max-width: 599px){
+    .albums{
+        width: calc(50% - 10px);
+    }
+}
+@media screen and (max-width: 427px){
+    .artistHeader{
+        gap: 10px;
+        flex-direction: column;
+    }
+    .artistPic{
+        align-self: flex-start;
+    }
+    .artistInformations{
+        width: 100%;
+        align-self: flex-start;
+    }
+    .artistAltInfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 349px){
+    .albums{
+        width: calc(100%);
+    }
+}
