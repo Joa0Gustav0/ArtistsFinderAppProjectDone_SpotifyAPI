@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/css/main.458e14cd.css",
+    "main.css": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/css/main.7156ae2f.css",
     "main.js": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/js/main.b16dd8b0.js",
     "static/media/aurora-loading.gif": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/media/aurora-loading.62380987495f8738c462.gif",
     "static/media/no-artist-img.png": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/media/no-artist-img.f14f51283d938c4eaa02.png",
@@ -8,11 +8,11 @@
     "static/media/aurora-no-results.png": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/media/aurora-no-results.a8c919abde93ec508105.png",
     "static/media/aurora-logo-white.png": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/media/aurora-logo-white.a2b8b7603ac5d06ab192.png",
     "index.html": "/ArtistsFinderAppProjectDone_SpotifyAPI/index.html",
-    "main.458e14cd.css.map": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/css/main.458e14cd.css.map",
+    "main.7156ae2f.css.map": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/css/main.7156ae2f.css.map",
     "main.b16dd8b0.js.map": "/ArtistsFinderAppProjectDone_SpotifyAPI/static/js/main.b16dd8b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.458e14cd.css",
+    "static/css/main.7156ae2f.css",
     "static/js/main.b16dd8b0.js"
   ]
 }
